@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Contact Us | Ye Olde Bookstore</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<script src="js/nav-dropdown.js"></script>
+</head>
+<body id="body-no-aside">
+	<header class="page-no-aside">
+		<div id="header-flex">
+			<figure id="header-img">
+				<img id="logo" src="images/Ye-Olde-Bookshop-Logo.png" alt="Ye Olde Bookshop Logo">
+			</figure>
+
+			<button id="hamburger">
+				<img src="images/hamburger.png" alt="Navigation Dropdown Menu">
+			</button>
+		</div>
+		
+		<nav id="navigation" class="hidden">
+			<ul>
+				<li><a class="nav-link" href="index.html">Home</a></li>
+				<li><a class="nav-link" href="about-us.html">About Us</a></li>
+				<li><a class="nav-link" href="new-arrivals.html">New Arrivals</a></li>
+				<li><a class="nav-link" href="restorations.html">Restorations</a></li>
+				<li><a class="nav-link" href="valuations.html">Valuations</a></li>
+				<li><a class="nav-link" href="book-of-the-month.html">Book of the Month</a></li>
+				<li><a class="nav-link" href="gallery.html">Gallery</a></li>
+				<li class="current"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<aside class="banner" id="page-no-aside">
+		<div id="banner-content">
+			<h2>Come Visit the Store</h2>
+			<p id='banner-p'>We are located at <b>119 Colombo Street</b> in <b>Sydenham</b></p>
+			<p>We are open <b>10am</b> to <b>4pm</b>, <b>Monday</b> to <b>Friday</b></p>
+		</div>
+		<figure id="banner-image">
+			<img id="front-of-shop" src="images/front-of-bookshop.png" alt="An Image of the front of the shop">
+		</figure>
+	</aside>
+
+	<main>
+		<h1>Contact Us</h1>
+        <h3>Use this form to enquire about Restorations, Valuations or just general questions.</h3>
+		<div id="form">
+			
+			<form action="mailto:flp0039@arastudent.ac.nz?subject=YeOldeBookshopForm" method="post" enctype="text/plain" name="contactUsForm">
+				
+				<div class="form-option" id="first-name">
+					<label for="fname">First Name*:</label><br>
+					<input type="text" name="FirstName" id="fname" placeholder="First Name" required><br>
+				</div>
+
+				<div class="form-option" id="last-name">
+					<label for="lname">Last Name:</label><br>
+					<input type="text" name="LastName" id="lname" placeholder="Last Name"><br>
+				</div>
+
+				<div class="form-option" id="email-area">
+					<label for="email">Email*:</label><br>
+					<input type="email" name="Email" id="email" placeholder="Email" required><br>
+				</div>
+
+				<div class="form-option" id="phone-number">
+					<label for="phone">Phone Number*:</label><br>
+					<input type="number" name="PhoneNumber" id="phone" placeholder="Phone Number"><br>
+				</div>
+
+				<div class="form-option" id="enquiry-type">
+					<label for="method">Whats your enquiry about?*</label><br>
+					<input type="radio" id="general" name="EnquiryType" value="General" checked>
+					<label for="general">General</label><br>
+					<input type="radio" id="valuations" name="EnquiryType" value="Valuations">
+					<label for="valuations">Valuations</label><br>
+					<input type="radio" id="restorations" name="EnquiryType" value="Restorations">
+					<label for="restorations">Restorations</label><br>
+				</div>
+
+				<div class="form-option" id="pref-contact-method">
+					<label for="method"> Prefered Contact Method</label><br>
+					<select id="method" name="ContactMethod">
+						<option value="email" selected>Email</option>
+						<option value="phone">Phone</option>
+					</select><br>
+				</div>
+
+				<div class="form-option" id="message-area">
+					<label for="message">Type your message below*:</label><br>
+					<textarea name="Message" id="message" rows="10" cols="30" placeholder="Type your message here" required></textarea><br>
+				</div>
+
+				<input type="submit" value="Submit" id="submit-button">
+				<input type="reset" value="Reset" id="reset-button">
+			</form>
+		</div>
+	</main>
+
+	<footer class="page-no-aside">
+		<div id="footer-content">
+			<p>&copy; Ye Olde Bookshop 2022</p>
+		</div>
+		<div id="social-media-links">
+			<div id="footer-instagram-logo-flexbox">
+				<a href="placeholder.html" target="_blank"><img src="images/instagram-logo.png" class="social-media-logo" alt="Link to the shops Instagram Page"></a>
+			</div>
+			<div id="footer-twitter-logo-flexbox">
+				<a href="placeholder.html" target="_blank"><img src="images/twitter-logo.png" class="social-media-logo" alt="Link to the shops Twitter Page"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

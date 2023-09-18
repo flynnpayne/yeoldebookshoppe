@@ -1,0 +1,592 @@
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ 
+* {
+    /* The width of an element will be the size of its border box,
+       not its content box (which is the normal default). */
+    box-sizing: border-box;
+}
+
+/* == END RESET =========================================== */
+
+/* ==================== Layout ==================== */
+
+    /* ==== General ===== */
+
+.banner, main, #book-of-the-month {
+    padding: 1rem;
+}
+
+#banner-image, nav, #dropdown {
+    display: none;
+}
+
+    /* ===== Header ===== */
+
+#header-img {
+    padding: 0.5rem 0;
+    width: 15rem;
+}
+
+#header-flex {
+    padding: 0 3rem 0 0;
+}
+
+    /* ===== Nav ===== */
+
+#hamburger {
+    height: 4.3rem;
+    width: 4.4rem;
+    padding: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+nav li {
+    padding: 1rem;
+}
+
+nav ul, .nav_link {
+    width: 100%;
+}
+
+a, nav ul {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-size: xx-large;
+}
+
+    /* ===== Banner ===== */
+
+#banner-image {
+    width: 15rem;
+}
+
+#banner-p {
+    padding-bottom: 0.3rem;
+}
+
+    /* ===== Main ===== */
+
+#main-image {
+    width: 20rem;
+    padding-bottom: 1rem;
+}
+
+.main-image-about {
+    width: 15rem;
+    padding-bottom: 1rem;
+}
+
+#main-content {
+    padding: 0 0 1rem 3rem;
+}
+
+main h1 {
+    padding-bottom: 1rem;
+}
+
+#main-content-head {
+    padding-bottom: 2rem;
+}
+
+.banner h2, #banner-content {
+    padding-bottom: 1rem;
+}
+
+#main-content-flex {
+    margin-bottom: 1rem;
+}
+
+#julia-photo {
+    padding-bottom: 1rem;
+}
+
+#book1, #book2 {
+    padding-bottom: 2rem;
+}
+
+#book1, #book2, #book3, #book4, #book5, #book6, #book7, #book8, #book9, #book10, #book11, #book12 {
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    border-style: solid;
+}
+
+
+
+#book4, #book5, #book6, #book7, #book8, #book9, #book10, #book11, #book12 {
+    display: none;
+}
+
+#restoration-examples {
+    margin-bottom: 1rem;
+}
+
+    /* ===== Book of the Month ====== */
+
+#book-of-the-month-caption {
+    padding: 0.75rem 0;
+}
+
+#book-of-the-month h2 {
+    padding-top: 1rem;
+}
+
+#book-of-the-month-link {
+    padding: 1rem;
+}
+
+#book-of-the-month-content {
+    padding: 1rem;
+    margin: 1rem;
+    width: 25rem;
+}
+
+#book-of-the-month-image {
+    width: 20rem;
+}
+
+    /* ===== Footer ===== */
+
+footer {
+    padding: 0.5rem 2rem;
+}
+
+#footer-instagram-logo-flexbox,  #footer-twitter-logo-flexbox{
+    width: 2.5rem;
+}
+
+#footer-instagram-logo-flexbox {
+    margin: 0.5rem;
+}
+
+    /* ===== Form ===== */
+
+form {
+    width: 20rem;
+    background-color: #ECECEC;
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    font-size: 100%;
+}
+
+input[type=text], input[type=email], input[type=number], textarea, select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid black;
+}
+
+.form-option {
+    padding-bottom: 1rem;
+}
+
+/* ==================== Styling ==================== */
+
+#hamburger {
+    border-radius: 0.5rem;
+    background-color: #52B2BF;
+}
+
+#book-of-the-month-content {
+    border-radius: 0.5rem;
+    background-color: #FFCB47;
+}
+
+#book-of-the-month a {
+    text-align: center;
+}
+
+#book-of-the-month-link {
+    border-radius: 1rem;
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+}
+
+.banner, footer {
+    color: white;
+}
+
+#book1, #book2, #book3, #book4, #book5, #book6, #book7, #book8, #book9, #book10, #book11, #book12 {
+    border-color: #52B2BF;
+    border-width: 0.1rem;
+}
+
+#main-list {
+    list-style-position: inside;
+}
+
+#main-content-flex, #main-content-flex-no-aside, #restoration-examples {
+    border-radius: 0.5rem;
+}
+
+.current {
+    background-color: #9AC2C9;
+}
+
+#book-of-the-month-cover {
+    border-style: solid;
+    border-color: black;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+}
+
+/* ==================== Flexbox ==================== */
+
+#header-flex, footer, #social-media-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#book-of-the-month, #book-of-the-month-content, main, #main-content-flex, #main-content-flex-no-aside, #restoration-examples {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-image-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ==================== Typography ==================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+figcaption {
+    font-size: medium;
+}
+
+/* ==================== Colour ==================== */
+
+.banner, footer {
+    background-color: #16346A;
+}
+
+/* ==================== Images ==================== */
+
+#logo, .social-media-logo, #front-of-shop, .staff-photo, #map-to-shop, #book-of-the-month-cover, #inside-shop, #main-video, #image, .image {
+    width: 100%;
+}
+
+#inside-shop, #main-content-flex, #restoration-examples {
+    padding: 1rem;
+}
+
+#main-content-flex-no-aside {
+    padding: 1rem;
+}
+
+/* ==================== Video ==================== */
+
+/* ==================== Responsive ==================== */
+
+@media screen and (min-width: 44rem){
+
+    /* == General == */
+
+    #banner-image, nav {
+        display: block;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    h2 {
+        text-align: left;
+    }
+    
+    /* == Grid == */
+
+    #message-area {
+        grid-column: 1/4;
+    }
+
+    #first-name, #email-area, #enquiry-type {
+        grid-column: 1/3;
+    }
+
+    #pref-contact-method {
+        grid-column: 3/4;
+        grid-row: 3;
+    }
+
+    #submit-button {
+        grid-column: 1;
+    }
+
+    #reset-button {
+        grid-column: 2;
+    }
+
+    #body-with-aside {
+        display: grid;
+        grid-template-columns: 1fr 60rem 20rem 1fr;
+    }
+
+    #body-no-aside {
+        display: grid;
+        grid-template-columns: 1fr 80rem 1fr;
+    }
+
+    header, .banner, footer {
+        grid-column: 2/4;
+    }
+
+    .page-no-aside, #page-no-aside {
+        grid-column: 2/3;
+    }
+
+    main, #book-of-the-month {
+        grid-row: 3;
+    }
+
+    main {
+        grid-column: 2/3;
+        justify-content: space-evenly;
+    }
+
+    #book-of-the-month {
+        grid-column: 3/4;
+    }
+
+    /* == Header == */
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    /* == Nav == */
+    
+    nav ul{
+        padding-right: 3rem;
+    }
+
+    nav {
+        padding: 1rem 1rem;
+    }
+
+    nav ul{
+        padding-right: 0;
+        display: flex;
+    }
+
+    .hidden, .show {
+        display: flex;
+        justify-content: center;
+    }
+
+    a, nav ul {
+        font-size: large;
+    }
+
+    /* == Banner == */
+
+    .banner {
+        display: flex;
+        flex-direction: row;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #banner-image {
+        margin-right: 3rem;
+    }
+
+    #banner-content {
+        width: 40rem;
+    }
+
+    /* == Main == */
+
+    #main-content-flex, #main-content-grid {
+        margin-bottom: 0;
+    }
+    main h1 {
+        padding: 0 0 2rem 0;
+        font-size: 2rem;
+    }
+
+    #main-image {
+        width: 35rem;
+        padding-bottom: 0;
+    }
+
+    .main-image-about {
+        padding-bottom: 0;
+        width: 40rem;
+    }
+
+    .main-image-about, #julia-photo, #jamal-photo {
+        flex-direction: row;
+    }
+
+    #restoration-examples {
+        margin-bottom: 2rem;
+    }
+
+    #main-content-flex, #main-content-flex-no-aside, #restoration-examples {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #restoration-examples {
+        flex-direction: row;
+    }
+
+    #main-image {
+        margin-bottom: 1rem;
+    }
+
+    #main-content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #main-content {
+        padding: 1rem 0 1rem 4rem;
+        width: 40em;
+    }
+
+    #book1, #book2, #book3, #book4, #book5, #book6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    /* == Aside == */
+
+    #book-of-the-month-image {
+        width: auto;
+    }
+
+    #book-of-the-month-content {
+        width: 13rem;
+    }
+
+    /* == Form == */
+
+    form {
+        width: 50rem;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 10rem 10rem 20rem;
+    }
+
+    #first-name, #email-area, #enquiry-type {
+        margin-right: 0.5rem;
+    }
+
+    #last-name, #phone-number, #pref-contact-method {
+        margin-left: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 72rem) {
+    
+    /* == Header == */
+    header, #header-flex {
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+
+    /* == Main == */
+
+    #main-content-flex, #main-content-flex-no-aside, #restoration-examples {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 50rem;
+    }
+
+    #main-image {
+        padding-right: 2rem;
+    }
+
+    #main-content-head {
+        padding-bottom: 0;
+    }
+
+    #main-content-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #restoration-before {
+        padding-right: 2rem;
+    }
+
+    #book7, #book8, #book9, #book10, #book11, #book12 {
+        display: block;
+    }
+
+    .main-image-about {
+        padding-right: 3rem;
+        flex-direction: column;
+    }
+
+    .main-image-about {
+        width: 15rem;
+        padding-bottom: 1rem;
+    }
+
+    #restoration-before {
+        padding-left: 2rem;
+    }
+
+    #main-content {
+        padding: 1rem 0 1rem 0;
+        width: 40rem;
+    }
+
+    #restoration-after {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #book-of-the-month a {
+        width: 15rem;
+    }
+}
