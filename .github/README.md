@@ -1,5 +1,5 @@
 # Ye Olde Bookshoppe
-[View Live](yeoldebookshoppe.flynnp4yne.com/)
+[View Live](https://yeoldebookshoppe.flynnp4yne.com/)
 
 Ye Olde Bookshoppe is a website created for an assignment at Ara Institute of Canterbury. I had to write up a specifications document which included topics like goals and objectives, target audience, user interaction, scope and SEO. I also had to create prototypes and then build the website in HTML and CSS.
 
